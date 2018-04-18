@@ -14,8 +14,8 @@ public class App {
                 }
             }
         });
-        thread.setPriority(10);
-        thread2.setPriority(1);
+        thread.setPriority(Thread.MAX_PRIORITY);
+        thread2.setPriority(Thread.MIN_PRIORITY);
         thread.start();
         thread2.start();
     }
